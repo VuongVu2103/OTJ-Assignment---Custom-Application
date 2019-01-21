@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Cer Acquisition" max_length="40" name="x_305921_se_cer_acquisition" type="collection">
+        <element label="Certificate" max_length="32" name="certificate" reference="x_305921_se_certificate" type="reference"/>
+        <element label="Certificate date" max_length="40" name="certificate_date" type="glide_date"/>
+        <element label="Certificate number" max_length="40" name="certificate_number" type="string"/>
+        <element label="ServiceNow release" max_length="40" name="servicenow_release" type="string"/>
+        <element label="Submission" max_length="32" name="submission" reference="x_305921_se_submission" type="reference"/>
+        <index name="index">
+            <element name="certificate"/>
+        </index>
+        <index name="index2">
+            <element name="submission"/>
+        </index>
+    </element>
+</database>

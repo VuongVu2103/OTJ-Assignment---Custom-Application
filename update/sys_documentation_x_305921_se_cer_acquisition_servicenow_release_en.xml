@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="servicenow_release" label="ServiceNow release" language="en" table="x_305921_se_cer_acquisition">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>servicenow_release</element>
+            <help/>
+            <hint/>
+            <label>ServiceNow release</label>
+            <language>en</language>
+            <name>x_305921_se_cer_acquisition</name>
+            <plural>ServiceNow releases</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-18 05:17:30</sys_created_on>
+            <sys_id>4a31e842374323003c04036973990edf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ServiceNow release</sys_name>
+            <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
+            <sys_update_name>sys_documentation_x_305921_se_cer_acquisition_servicenow_release_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-18 05:17:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

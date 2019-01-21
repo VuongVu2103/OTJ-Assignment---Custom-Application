@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Certificate" max_length="40" name="x_305921_se_certificate" type="collection">
+        <element label="Certificate Name" max_length="40" name="certificate_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Product line" max_length="32" name="product_line" reference="x_305921_se_product_line" reference_qual="product_lineSTARTSWITH^EQ" reference_qual_condition="product_lineSTARTSWITH^EQ" type="reference"/>
+        <index name="index">
+            <element name="product_line"/>
+        </index>
+    </element>
+</database>
