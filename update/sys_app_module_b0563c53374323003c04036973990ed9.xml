@@ -11,31 +11,31 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>My Skill  Evaluations</mobile_title>
+        <mobile_title>My Skill Evaluation</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_305921_se_skill_assetment</name>
         <order>150</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_305921_se.user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-01-21 06:07:44</sys_created_on>
+        <sys_created_on>2019-01-22 04:03:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>d759c487378363003c04036973990e99</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>My Skill  Evaluations</sys_name>
+        <sys_id>b0563c53374323003c04036973990ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Skill Evaluation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
-        <sys_update_name>sys_app_module_d759c487378363003c04036973990e99</sys_update_name>
+        <sys_update_name>sys_app_module_b0563c53374323003c04036973990ed9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-21 06:27:44</sys_updated_on>
+        <sys_updated_on>2019-01-22 04:03:17</sys_updated_on>
         <timeline_page/>
-        <title>My Skill  Evaluations</title>
+        <title>My Skill Evaluation</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

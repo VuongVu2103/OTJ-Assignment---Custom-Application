@@ -13,7 +13,7 @@
         <map_page/>
         <mobile_title>My SE Approvals</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_305921_se_skill_assetment</name>
+        <name>x_305921_se_submission</name>
         <order>250</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
@@ -21,19 +21,19 @@
         <roles>x_305921_se.admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-01-21 06:08:34</sys_created_on>
+        <sys_created_on>2019-01-22 04:04:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e6894887378363003c04036973990e61</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>3bc6b093374323003c04036973990edf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>My SE Approvals</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
-        <sys_update_name>sys_app_module_e6894887378363003c04036973990e61</sys_update_name>
+        <sys_update_name>sys_app_module_3bc6b093374323003c04036973990edf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-21 07:10:57</sys_updated_on>
+        <sys_updated_on>2019-01-22 04:04:52</sys_updated_on>
         <timeline_page/>
         <title>My SE Approvals</title>
         <uncancelable>false</uncancelable>

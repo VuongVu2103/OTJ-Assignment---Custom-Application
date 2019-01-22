@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Skill Assetment" max_length="40" name="x_305921_se_skill_assetment" type="collection">
         <element label="Number" max_length="40" name="number" type="string"/>
-        <element label="Proficiency level" max_length="40" name="proficiency_level" type="string"/>
+        <element label="Proficiency Level" max_length="40" name="proficiency_level" type="string"/>
         <element label="Skill" max_length="32" name="skill" reference="x_305921_se_skill" type="reference"/>
         <element label="Submission" max_length="32" name="submission" reference="x_305921_se_submission" type="reference"/>
         <index name="index">

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_305921_se.user" name="x_305921_se.user">9773878637c723003c04036973990ebf</contains>
+        <role display_value="x_305921_se.admin" name="x_305921_se.admin">5814078637c723003c04036973990e35</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-22 02:45:05</sys_created_on>
+        <sys_id>e4b46857370323003c04036973990e8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_305921_se.user.x_305921_se.admin</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
+        <sys_update_name>sys_user_role_contains_e4b46857370323003c04036973990e8b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-22 02:45:05</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
