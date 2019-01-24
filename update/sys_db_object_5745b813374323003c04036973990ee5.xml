@@ -7,7 +7,7 @@
         <configuration_access>false</configuration_access>
         <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
-        <delete_access>false</delete_access>
+        <delete_access>true</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
         <label>Skill Assetment</label>
@@ -23,14 +23,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-01-22 04:00:11</sys_created_on>
         <sys_id>5745b813374323003c04036973990ee5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Skill Assetment</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
         <sys_update_name>sys_db_object_5745b813374323003c04036973990ee5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-22 04:00:12</sys_updated_on>
+        <sys_updated_on>2019-01-23 03:47:56</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_305921_se.user" name="x_305921_se.user">9773878637c723003c04036973990ebf</user_role>
         <ws_access>true</ws_access>

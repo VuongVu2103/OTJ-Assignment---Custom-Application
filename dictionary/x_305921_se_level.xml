@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Level" max_length="40" name="x_305921_se_level" type="collection">
-        <element label="Level" max_length="40" name="level" type="string"/>
-        <element label="Min scope" max_length="40" name="min_scope" type="integer"/>
+        <element display="true" label="Level" max_length="40" name="level" type="string"/>
+        <element label="Min score" max_length="40" name="min_scope" type="integer"/>
     </element>
 </database>

@@ -7,7 +7,7 @@
         <empty_condition/>
         <filter_condition/>
         <filter_roles/>
-        <hierarchical_lists>true</hierarchical_lists>
+        <hierarchical_lists>false</hierarchical_lists>
         <label/>
         <link_condition/>
         <link_roles/>
@@ -23,7 +23,7 @@
         <omit_filters>false</omit_filters>
         <omit_if_empty>false</omit_if_empty>
         <omit_links>false</omit_links>
-        <omit_new_button>false</omit_new_button>
+        <omit_new_button>true</omit_new_button>
         <related_list>x_305921_se_skill_assetment.submission</related_list>
         <sys_class_name>sys_ui_list_control</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c0c9645b370323003c04036973990e54</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_305921_se_submission</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
@@ -39,6 +39,6 @@
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
         <sys_update_name>sys_ui_list_control_c0c9645b370323003c04036973990e54</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-22 03:07:16</sys_updated_on>
+        <sys_updated_on>2019-01-23 07:51:08</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

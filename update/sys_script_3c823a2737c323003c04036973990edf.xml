@@ -3,10 +3,10 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
-        <action_query>true</action_query>
-        <action_update>false</action_update>
-        <active>true</active>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Skill Assetment Scripts</name>
+        <name>Level</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -28,36 +28,36 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var Task = new GlideRecord('x_305921_se_skill');
-	Task.query();
-	while(Task.next()){
-		var Task1 = new GlideRecord('x_305921_se_skill_assetment');
-		Task1.initialize();
-// 	Reference fields contain the sys_id of the record from the related table.
-// 	then we use dot-walking access to that reference field to check if that field contain sys_id equal with sys_id of parent table or not  
-		Task1.skill = Task.sys_id;
-		Task1.submission = current.sys_id;
-// 		We got 2 field contain sys_id so if they equal then insert in to child table. 
-		Task1.insert();
-	}
+	var task = new GlideRecord('x_305921_se_level');
+	task.query();
+	while(task.next()){
+		var task2 = new GlideRecord('x_305921_se_submission');
+		if(task2.score >= task.min_scope){
+			task2.level = task.level;
+			gs.addInfoMessage('level current' + task.level);
+		}
+// 		gs.addErrorMessage('level' + task.level);
+// 		gs.addErrorMessage('task ' + task.min_scope);
+	} 
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-01-22 07:02:13</sys_created_on>
+        <sys_created_on>2019-01-23 07:58:22</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>12be5d1f378323003c04036973990eda</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>Skill Assetment Scripts</sys_name>
+        <sys_id>3c823a2737c323003c04036973990edf</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Level</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
-        <sys_update_name>sys_script_12be5d1f378323003c04036973990eda</sys_update_name>
+        <sys_update_name>sys_script_3c823a2737c323003c04036973990edf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-23 06:13:51</sys_updated_on>
+        <sys_updated_on>2019-01-23 09:59:59</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=12be5d1f378323003c04036973990eda"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=3c823a2737c323003c04036973990edf"/>
 </record_update>

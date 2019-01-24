@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Skill Assetment" max_length="40" name="x_305921_se_skill_assetment" type="collection">
-        <element label="Number" max_length="40" name="number" type="string"/>
-        <element label="Proficiency Level" max_length="40" name="proficiency_level" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element choice="3" default="0" label="Proficiency Level" max_length="40" name="proficiency_level" type="string">
+            <choice>
+                <element inactive_on_update="false" label="N/A" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1 - Conceptual/Trained" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2 - Experienced" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3 - Expert" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4 - Guru" sequence="4" value="4"/>
+            </choice>
+        </element>
         <element label="Skill" max_length="32" name="skill" reference="x_305921_se_skill" type="reference"/>
-        <element label="Submission" max_length="32" name="submission" reference="x_305921_se_submission" type="reference"/>
+        <element display="true" label="Submission" max_length="32" name="submission" reference="x_305921_se_submission" type="reference"/>
         <index name="index">
             <element name="skill"/>
         </index>
