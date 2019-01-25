@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-01-23 15:51:49</sys_updated_on>
         <table>x_305921_se_submission</table>
-        <ui_policy display_value="Show or hide level field">50b5e2eb378323003c04036973990e57</ui_policy>
+        <ui_policy display_value="Show Or Hide Level Field">50b5e2eb378323003c04036973990e57</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

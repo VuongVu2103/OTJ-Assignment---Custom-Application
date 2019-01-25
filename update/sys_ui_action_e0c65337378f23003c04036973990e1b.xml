@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Submit for Review</action_name>
+        <action_name>Approve of COE</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2/>
         <comments/>
-        <condition>current.state == '0' &amp;&amp; current.description != null &amp;&amp; current.description != undefined &amp;&amp; current.description!=""</condition>
+        <condition>current.state=='2' &amp;&amp; gs.getUser().isMemberOf('Skill Evaluation COE')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -23,62 +23,31 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Submit for Review</name>
+        <name>Approve</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[/**
-* When onSubmit is execute the state must set to summitted 
-* then we calculate the score of proficiency level .
-* Query every record of min score by using order by descending 
-* method if the current score is greater than min score then map 
-* current level equal with the sys id of level table that contain
-* level we want to display.
-* @total(integer)
-*
-*/
-
-(function onSubmit(){
-// 	Score
-	current.state = '1';
-	var task = new GlideRecord("x_305921_se_skill_assetment");
-	task.addQuery('submission.number',current.number);
-	task.query();
-	var total = 0 ;
-	while(task.next()){
-		total += parseInt(task.proficiency_level); 		 
-	}
-	current.score = total;
-// 	Level
-	var level = new GlideRecord('x_305921_se_level');
-	level.orderByDesc('min_scope');
-	level.query();	
-	while(level.next()){
-		if(total >= level.min_scope){
-			current.level = level.sys_id;
-			break;
-		}
-	}
-	current.update();
-})();]]></script>
-        <show_insert>false</show_insert>
+        <script><![CDATA[current.state = '3';
+current.valid = false;
+current.update();]]></script>
+        <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-01-23 04:33:07</sys_created_on>
+        <sys_created_on>2019-01-24 05:03:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>48c5ca27374323003c04036973990e96</sys_id>
-        <sys_mod_count>31</sys_mod_count>
-        <sys_name>Submit for Review</sys_name>
+        <sys_id>e0c65337378f23003c04036973990e1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
-        <sys_update_name>sys_ui_action_48c5ca27374323003c04036973990e96</sys_update_name>
+        <sys_update_name>sys_ui_action_e0c65337378f23003c04036973990e1b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-25 03:09:55</sys_updated_on>
+        <sys_updated_on>2019-01-24 05:03:00</sys_updated_on>
         <table>x_305921_se_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

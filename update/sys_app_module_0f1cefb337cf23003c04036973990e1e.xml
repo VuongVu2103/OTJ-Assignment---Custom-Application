@@ -5,15 +5,17 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter/>
-        <hint>Skill Evaluation</hint>
+        <filter table="x_305921_se_submission">state=3^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>New Evaluation</mobile_title>
+        <mobile_title>Completed</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_305921_se_skill</name>
+        <name>x_305921_se_submission</name>
         <order>325</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
@@ -21,21 +23,21 @@
         <roles>x_305921_se.admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-01-21 05:54:29</sys_created_on>
+        <sys_created_on>2019-01-24 06:33:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>18560407378363003c04036973990ecc</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>All</sys_name>
+        <sys_id>0f1cefb337cf23003c04036973990e1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
-        <sys_update_name>sys_app_module_18560407378363003c04036973990ecc</sys_update_name>
+        <sys_update_name>sys_app_module_0f1cefb337cf23003c04036973990e1e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-21 07:11:22</sys_updated_on>
+        <sys_updated_on>2019-01-24 06:33:54</sys_updated_on>
         <timeline_page/>
-        <title>All</title>
+        <title>Completed</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

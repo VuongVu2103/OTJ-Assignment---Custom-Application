@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Skill" max_length="40" name="x_305921_se_skill" type="collection">
         <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
-        <element label="Product line" max_length="32" name="product_line" reference="x_305921_se_product_line" type="reference"/>
-        <element label="Skill description" max_length="40" name="skill_description" type="string"/>
+        <element label="Product line" max_length="32" name="product_line" read_only="true" reference="x_305921_se_product_line" type="reference"/>
+        <element label="Skill description" max_length="40" name="skill_description" read_only="true" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Weight" max_length="40" name="weight" type="integer"/>
         <index name="index">
