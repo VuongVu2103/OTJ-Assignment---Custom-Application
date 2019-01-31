@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Cer Acquisition" max_length="40" name="x_305921_se_cer_acquisition" type="collection">
+    <element label="Cer Acquisition" max_length="40" name="x_305921_se_cer_acquisition" sizeclass="7602" type="collection">
         <element label="Certificate" max_length="32" name="certificate" reference="x_305921_se_certificate" type="reference"/>
         <element label="Certificate date" max_length="40" name="certificate_date" type="glide_date"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Certificate number" max_length="40" name="certificate_number" type="string"/>

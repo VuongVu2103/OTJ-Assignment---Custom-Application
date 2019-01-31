@@ -5,7 +5,7 @@
         <client>false</client>
         <client_script_v2/>
         <comments/>
-        <condition>current.state == '0' &amp;&amp; current.description != null &amp;&amp; current.description != undefined &amp;&amp; current.description!=""</condition>
+        <condition>current.state == '0' &amp;&amp; current.description != null &amp;&amp; current.description != undefined &amp;&amp; current.description!="" &amp;&amp; gs.getUser().isMemberOf('Skill Evaluation User')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -70,7 +70,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>48c5ca27374323003c04036973990e96</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Submit for Review</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
@@ -78,7 +78,7 @@
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
         <sys_update_name>sys_ui_action_48c5ca27374323003c04036973990e96</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-25 03:09:55</sys_updated_on>
+        <sys_updated_on>2019-01-31 08:19:17</sys_updated_on>
         <table>x_305921_se_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -25,11 +25,35 @@
         <list_style/>
         <name>Approve</name>
         <onclick/>
-        <order>100</order>
-        <script><![CDATA[current.state = '3';
-current.valid = false;
-current.update();]]></script>
-        <show_insert>true</show_insert>
+        <order>150</order>
+        <script><![CDATA[/**
+* update state to 'Completed'
+*/
+(function onSubmit(){
+	// Add your code here
+	var user = new GlideRecord('x_305921_se_submission');
+	user.addQuery('assigned_to',current.assigned_to);
+	user.addQuery('state','=','3');
+	user.query();
+	if( user.next()){
+		var count = new GlideAggregate('x_305921_se_submission');
+		count.addAggregate('COUNT');
+		count.query();
+		var record = 0;
+		if(count.next()) 
+		   record = count.getAggregate('COUNT');
+// 		var record = user.getRowCount();
+		current.state = '3';
+		user.setValue('valid',record);
+		user.updateMultiple();
+	} else {
+		current.state = '3';
+	}
+	current.update();
+})();
+
+]]></script>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -39,7 +63,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e0c65337378f23003c04036973990e1b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_305921_se">c2b0dc02370323003c04036973990e58</sys_package>
@@ -47,7 +71,7 @@ current.update();]]></script>
         <sys_scope display_value="Skill Evaluation">c2b0dc02370323003c04036973990e58</sys_scope>
         <sys_update_name>sys_ui_action_e0c65337378f23003c04036973990e1b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-24 05:03:00</sys_updated_on>
+        <sys_updated_on>2019-01-31 09:41:41</sys_updated_on>
         <table>x_305921_se_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
